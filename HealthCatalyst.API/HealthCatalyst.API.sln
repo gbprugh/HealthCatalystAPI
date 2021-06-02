@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.API", "HealthCatalyst.API.csproj", "{090DF878-2083-4F68-BB6F-7A1D0BF13F2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.API.Tests", "C:\Users\gbpru\source\repos\HealthCatalyst.Api.Tests\HealthCatalyst.API.Tests.csproj", "{645F1878-A8F9-4E8A-996A-8230D9170680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.API.Tests", "..\HealthCatalyst.API.Tests\HealthCatalyst.API.Tests.csproj", "{645F1878-A8F9-4E8A-996A-8230D9170680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
