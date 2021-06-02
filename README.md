@@ -11,7 +11,25 @@
   `None`
 *	**Successful Response**
   *	**HTTP Status Code** 200 <br />
-    **Content:** `[{"id":1,"firstName":"Jack","lastName":"Cat","address":"127 Elm Street","age":9,"interests":[{"id":1,"person_Id":1,"value":"Sleeping"}]}]`
+    **Content:** 
+```json
+[
+    {
+        "id":1,
+        "firstName":"Jack",
+        "lastName":"Cat",
+        "address":"127 Elm Street",
+        "age":9,
+        "interests": [
+            {
+                "id":1,
+                "person_Id":1,
+                "value":"Sleeping"
+            }
+        ]
+    }
+]
+```
 *	**Error Response**
   * **HTTP Status Code** 404 Not Found
 Or
@@ -73,7 +91,9 @@ Or
             }
         ]
     }
-]```
+];
+```
+
 * **Error Response**
   *	**HTTP Status Code** 404 Not Found
 Or
@@ -119,7 +139,8 @@ Or
              }
          ]
     }
-]```
+];
+```
 *	**Error Response**
   *	**HTTP Status Code** 404 Not Found
 Or
@@ -149,7 +170,8 @@ Or
         "value" : "alphanumeric string"
         }
     ]
-}```
+};
+```
 *	**Success Response**
   * **HTTP Status Code** 201
     **Content:**
@@ -164,7 +186,8 @@ Or
         "value" : "alphanumeric string"
         }
     ]
-}```
+};
+```
 *	**Error Response**
   *	**HTTP Status Code** 405 Not Found
 Or
