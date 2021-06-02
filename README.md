@@ -183,7 +183,7 @@ Or
     "age": integer,
     "interests" : [
         {
-        "value" : "alphanumeric string"
+            "value" : "alphanumeric string"
         }
     ]
 };
@@ -201,7 +201,7 @@ Or
     "age": 4,
     "interests" : [
         {
-        "value" : "Management"
+            "value" : "Management"
         }
     ]
 };
