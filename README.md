@@ -10,7 +10,7 @@
 * **Data Parameters**
   `None`
 *	**Successful Response**
-  *	**HTTP Status Code** 200 <br />
+    *	**HTTP Status Code** 200 <br />
     **Content:** 
 ```json
 [
@@ -50,8 +50,8 @@ Or
   Id must be an integer
 *	**Data Parameters**
   None
-* **Success Response**
-  *	**HTTP Status Code** 200 <br />
+* **Successful Response**
+    *	**HTTP Status Code** 200 <br />
     **Content:**
 ```json
 [
