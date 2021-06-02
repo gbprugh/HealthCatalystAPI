@@ -98,7 +98,9 @@ Or
 
 * **Error Response**
   *	**HTTP Status Code** 404 Not Found
+
 Or
+
   *	**HTTP Status Code** 400 Unauthorized
 *	**Sample Call**
 ```/api/people/1```
@@ -145,7 +147,9 @@ Or
 ```
 *	**Error Response**
   *	**HTTP Status Code** 404 Not Found
+
 Or
+
   *	**HTTP Status Code** 400 Unauthorized
 *	**Sample Call**
 ```/api/people/geoff```
@@ -192,7 +196,9 @@ Or
 ```
 *	**Error Response**
   *	**HTTP Status Code** 405 Not Found
+
 Or
+
   *	**HTTP Status Code** 400 Unauthorized
 *	**Sample Call**
 ```json
