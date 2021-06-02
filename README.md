@@ -200,7 +200,7 @@ Or
 Or
 
   *	**HTTP Status Code** 400 Unauthorized
-*	**Sample Call**
+*	**Sample Call** `api/people`
 ```json
 {
     "firstName": "Glenn",
