@@ -117,7 +117,7 @@ Or
 * **Data Parameters**
   None
 * **Success Response**
-* **HTTP Status Code** 200 <br />
+    * **HTTP Status Code** 200 <br />
   **Content:**
 ```json
 [
