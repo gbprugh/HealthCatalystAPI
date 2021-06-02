@@ -51,7 +51,7 @@ Or
 *	**Data Parameters**
   None
 * **Success Response**
-  *	**HTTP Status Code** 200
+  *	**HTTP Status Code** 200 <br />
     **Content:**
 ```json
 [
@@ -117,7 +117,7 @@ Or
 * **Data Parameters**
   None
 * **Success Response**
-* **HTTP Status Code** 200
+* **HTTP Status Code** 200 <br />
   **Content:**
 ```json
 [
@@ -179,7 +179,7 @@ Or
 };
 ```
 *	**Success Response**
-  * **HTTP Status Code** 201
+  * **HTTP Status Code** 201 <br />
     **Content:**
 ```json
 {
