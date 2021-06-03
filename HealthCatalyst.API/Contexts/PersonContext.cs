@@ -12,12 +12,17 @@ namespace HealthCatalyst.API.Contexts
         public DbSet<Person> People { get; set; }
         public DbSet<Interest> Interests { get; set; }
 
+        private static string _connectionString;
+
+        public PersonContext(DbContextOptions<PersonContext> opt) : base(opt)
+        {
+            Database.EnsureCreated();
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(connectionString);
         }
-
-        private static string _connectionString;
 
         private static string connectionString
         {
@@ -32,11 +37,6 @@ namespace HealthCatalyst.API.Contexts
                 }
                 return _connectionString;
             }
-        }
-        public PersonContext(DbContextOptions<PersonContext> opt) : base(opt)
-        {
-            var optionsbuilder = new DbContextOptionsBuilder();
-            optionsbuilder.EnableSensitiveDataLogging();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
