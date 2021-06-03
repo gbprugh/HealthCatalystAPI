@@ -4,6 +4,8 @@ using HealthCatalyst.API.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,7 +35,7 @@ namespace HealthCatalyst.API
             services.AddScoped<IPeopleRepository, PeopleRepository>();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, PersonContext personContext)
         {
             if (env.IsDevelopment())
             {
@@ -49,7 +51,12 @@ namespace HealthCatalyst.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            }); 
+            
+            if (!personContext.Database.GetService<IRelationalDatabaseCreator>().Exists())
+            {
+                personContext.Database.Migrate();
+            }
         }
     }
 }

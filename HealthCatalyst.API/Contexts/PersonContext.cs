@@ -14,10 +14,7 @@ namespace HealthCatalyst.API.Contexts
 
         private static string _connectionString;
 
-        public PersonContext(DbContextOptions<PersonContext> opt) : base(opt)
-        {
-            Database.EnsureCreated();
-        }
+        public PersonContext(DbContextOptions<PersonContext> opt) : base(opt) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
