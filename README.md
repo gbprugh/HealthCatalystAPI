@@ -1,3 +1,5 @@
+**The program must be run at least once before the tests will not pass as there is no database to compare against.**
+----
 **Get All People**
 ----
   Returns json data for all people in the database.
