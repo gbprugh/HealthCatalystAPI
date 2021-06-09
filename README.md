@@ -1,4 +1,4 @@
-**The program must be run at least once before the tests will not pass as there is no database to compare against.**
+**The program must be run at least once before the tests will pass. Prior to running once, there is no database to compare against.**
 ----
 **Get All People**
 ----
